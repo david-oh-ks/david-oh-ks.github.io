@@ -10,32 +10,36 @@
       border-bottom: 1px solid #ddd;
       scroll-margin-top: 100px;
     }
-    .header-block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 20px;
-    }
-    .header-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    header {
       background-color: #2c3e50;
       color: white;
+      text-align: center;
       padding: 40px 20px;
     }
-    .title-text {
-      text-align: center;
-      margin-top: 20px;
+    .logo-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 20px;
+    }
+    .logo-profile img {
+      max-width: 200px;
+    }
+    .profile-pic {
+      border-radius: 100px;
+      border: 4px solid white;
+    }
+    .title-text h1 {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-<header class="header-wrapper">
-  <div class="header-block" style="transform: translateX(-40px);">
-    <img src="logo.svg" alt="CCC 로고" style="max-width: 200px;">
-    <img src="04870b58-df9b-497a-8fd0-8e1aa715e8fa.png" alt="오진탁 목사 프로필 사진" style="max-width: 200px; border-radius: 100px; border: 4px solid white;">
+<header>
+  <div class="logo-profile">
+    <img src="logo.svg" alt="CCC 로고">
+    <img src="04870b58-df9b-497a-8fd0-8e1aa715e8fa.png" alt="오진탁 목사 프로필 사진" class="profile-pic">
   </div>
   <div class="title-text">
     <h1>오진탁 간사(목사)의 사역과 삶</h1>
